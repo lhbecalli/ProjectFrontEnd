@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #0f0f1e;
+    color: aliceblue;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    padding: 20px 50px;
+    
+    /*para poder mover */
+    display: flex;
+    
+
+       /*Coloca um ao lado do outro */
+    justify-content: space-between;
+      /*largura da distancia entre eles. */
+    width: 90vw;
+    align-items: center;
+    z-index: 3;
+
+}
