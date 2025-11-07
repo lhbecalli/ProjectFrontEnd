@@ -6,27 +6,120 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body{
-    background-color: #0f0f1e;
-    color: aliceblue;
+body {
+    background-color: #0D1117;
+    color: #E6EDF3;
     overflow: hidden;
     font-size: 16px;
 }
 
-header{
+header {
     position: fixed;
-    top: 0px;
+    top: 0;
     padding: 20px 50px;
-    
-    /*para poder mover */
     display: flex;
-    
-
-       /*Coloca um ao lado do outro */
     justify-content: space-between;
-      /*largura da distancia entre eles. */
     width: 90vw;
     align-items: center;
     z-index: 3;
+}
+
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #E6EDF3;
+    text-shadow: 0 0 10px #3B82F6;
+    position: relative;
+}
+
+.logo::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background-color: #3B82F6;
+    transition: width 0.3s ease;
+}
+
+.logo:hover::after {
+    width: 100%;
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 48px;
+}
+
+header nav ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    color: #E6EDF3;
+    transition: color 0.3s ease;
+}
+
+header nav ul li::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #22D3EE;
+    transition: width 0.4s ease;
+}
+
+header nav ul li:hover {
+    color: #22D3EE;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+ 
+
+.container{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+    content: '';
+    overflow: hidden;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 247, 255, 0.2) 0%, rgba(15, 15, 30, 0) 70%);
+    top: 10%;
+    left: 50%;
+    filter: blur(50px);
+    z-index: 1;
+    animation: pulse 0.8s infinite alternate;
+}
+
+/* Animação */ 
+@keyframes pulse{
+
+
+    /* Qual estilo q vai estar no momento 0 */
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    /* Qual estilo vai estar no momento 100 */
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
 
 }
+
