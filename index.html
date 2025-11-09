@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Referencia</title>
+
+    <!-- Fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS e JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <!-- ===== CABEÇALHO ===== -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            Project
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main class="container">
+
+        <!-- CÍRCULOS DECORATIVOS DE FUNDO -->
+        <div class="tech-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+
+        <!-- LISTA DE PRODUTOS (CARROSSEL) -->
+        <div class="list">
+
+            <!-- ITEM 1 ATIVO -->
+            <div class="active">
+
+                <!-- IMAGEM DO PRODUTO -->
+                <div class="product-img">
+                    <img src="img/vision-pro.png" alt="Apple Vision">
+                    <button class="button">Saiba Mais</button>
+                </div>
+
+                <!-- TEXTOS DO PRODUTO -->
+                <div class="conteudo">
+                    <p class="tag-name">Alta Performance</p>
+                    <p class="tag-title">Apple Vision Pro</p>
+                    <p class="description">
+                        Realidade Aumentada imersiva com a Apple Vision Pro. Inovação ao alcance dos olhos.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- ITEM 2 -->
+            <div class="item">
+                <div class="product-img">
+                    <img src="img/air-pods.png" alt="Air PODS PRO">
+                    <button class="button">Saiba Mais</button>
+                </div>
+
+                <div class="conteudo">
+                    <p class="tag-name">Fone de ótima qualidade</p>
+                    <p class="tag-title">AIR PODS</p>
+                    <p class="description">O melhor som que seus ouvidos podem ter.</p>
+                </div>
+            </div>
+
+
+            <!-- ITEM 3 -->
+            <div class="item">
+                <div class="product-img">
+                    <img src="img/apple-watch.png" alt="Apple Watch">
+                    <button class="button">Saiba Mais</button>
+                </div>
+
+                <div class="conteudo">
+                    <p class="tag-name">Relógio com precisão</p>
+                    <p class="tag-title">Apple Watch</p>
+                    <p class="description">
+                        Praticidade, tecnologia e design inovador unidos em um só.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- FIM DA LISTA -->
+
+
+        <!-- SETAS DE NAVEGAÇÃO (CARROSSEL) -->
+        <div class="setas">
+<button class="arrow arrow-right" id="direita">
+
+                <!-- ÍCONE DE SETA ESQUERDA -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 
+                        4a.5.5 0 0 1 0 .708l-4 
+                        4a.5.5 0 0 1-.708-.708L13.293 
+                        8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+            </button>
+
+<button class="arrow arrow-left" id="esquerda">
+                <!-- ÍCONE DE SETA DIREITA -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 
+                        0 1 0-.708-.708l-4 
+                        4a.5.5 0 0 0 0 
+                        .708l4 4a.5.5 0 0 0 
+                        .708-.708L2.707 
+                        8.5H14.5A.5.5 0 0 0 
+                        15 8" />
+                </svg>
+            </button>
+        </div>
+
+
+        <!-- SEÇÃO INFERIOR COM NÚMEROS E PONTOS DE INDICAÇÃO -->
+        <div class="section">
+            <div class="number">01</div>
+            <div class="number">02</div>
+            <div class="number">03</div>
+
+            <!-- Pontos de progresso -->
+            <div class="dots"></div>
+            <div class="dot-active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
