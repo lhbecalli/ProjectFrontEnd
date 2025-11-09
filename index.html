@@ -54,21 +54,22 @@
         <div class="list">
 
             <!-- ITEM 1 ATIVO -->
-            <div class="active">
+            <div class="item active">
 
                 <!-- IMAGEM DO PRODUTO -->
                 <div class="product-img">
                     <img src="img/vision-pro.png" alt="Apple Vision">
-                    <button class="button">Saiba Mais</button>
+                    
                 </div>
 
                 <!-- TEXTOS DO PRODUTO -->
                 <div class="conteudo">
                     <p class="tag-name">Alta Performance</p>
-                    <p class="tag-title">Apple Vision Pro</p>
+                    <p class="tag-title">Apple Vision <span class="Pro">Pro</span></p>
                     <p class="description">
-                        Realidade Aumentada imersiva com a Apple Vision Pro. Inovação ao alcance dos olhos.
-                    </p>
+                        Realidade Aumentada imersiva com a Apple Vision Pro. Inovação ao alcance dos olhos.</p>
+                  
+                        <button class="button">Saiba Mais</button>
                 </div>
             </div>
 
@@ -77,13 +78,14 @@
             <div class="item">
                 <div class="product-img">
                     <img src="img/air-pods.png" alt="Air PODS PRO">
-                    <button class="button">Saiba Mais</button>
                 </div>
 
                 <div class="conteudo">
                     <p class="tag-name">Fone de ótima qualidade</p>
                     <p class="tag-title">AIR PODS</p>
                     <p class="description">O melhor som que seus ouvidos podem ter.</p>
+                    
+                        <button class="button">Saiba Mais</button>
                 </div>
             </div>
 
@@ -92,16 +94,17 @@
             <div class="item">
                 <div class="product-img">
                     <img src="img/apple-watch.png" alt="Apple Watch">
-                    <button class="button">Saiba Mais</button>
+                    
                 </div>
 
                 <div class="conteudo">
                     <p class="tag-name">Relógio com precisão</p>
                     <p class="tag-title">Apple Watch</p>
                     <p class="description">
-                        Praticidade, tecnologia e design inovador unidos em um só.
-                    </p>
-                </div>
+                        Praticidade, tecnologia e design inovador unidos em um só. </p>
+                
+                        <button class="button">Saiba Mais</button>
+                    </div>
             </div>
 
         </div> <!-- FIM DA LISTA -->
@@ -109,21 +112,9 @@
 
         <!-- SETAS DE NAVEGAÇÃO (CARROSSEL) -->
         <div class="setas">
-<button class="arrow arrow-right" id="direita">
+<button class="arrow-right" id="direita">
 
                 <!-- ÍCONE DE SETA ESQUERDA -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 
-                        4a.5.5 0 0 1 0 .708l-4 
-                        4a.5.5 0 0 1-.708-.708L13.293 
-                        8.5H1.5A.5.5 0 0 1 1 8" />
-                </svg>
-            </button>
-
-<button class="arrow arrow-left" id="esquerda">
-                <!-- ÍCONE DE SETA DIREITA -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -136,23 +127,53 @@
                         15 8" />
                 </svg>
             </button>
+
+<button class="arrow-left" id="esquerda">
+                <!-- ÍCONE DE SETA DIREITA -->
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 
+                        4a.5.5 0 0 1 0 .708l-4 
+                        4a.5.5 0 0 1-.708-.708L13.293 
+                        8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+            </button>
         </div>
 
-
+  
         <!-- SEÇÃO INFERIOR COM NÚMEROS E PONTOS DE INDICAÇÃO -->
-        <div class="section">
-            <div class="number">01</div>
-            <div class="number">02</div>
-            <div class="number">03</div>
-
-            <!-- Pontos de progresso -->
-            <div class="dots"></div>
+<div class="section">
+    <div class="number-dot active">
+        <div class="number">01</div>
+        <div class="dots">
             <div class="dot-active"></div>
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
-    </main>
+    </div>
+
+    <div class="number-dot">
+        <div class="number">02</div>
+        <div class="dots">
+            <div class="dot-active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="number-dot">
+        <div class="number">03</div>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 
 </html>
+>
