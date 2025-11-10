@@ -141,10 +141,12 @@ header nav ul li:hover::after {
     display: flex;             /* organiza horizontalmente */
     align-items: center;       /* centraliza verticalmente */
     gap: 40px;                 /* espaço entre imagem e texto */
+    transition: opacity 0.3s ease;  /* animação suave */
     opacity: 0;}
 
 .item.active {
     opacity: 1;
+    z-index: 1; 
 }
 
 
