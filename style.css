@@ -100,10 +100,8 @@ header nav ul li:hover::after {
     border-radius: 50%;
     background: radial-gradient(circle, rgba(0, 247, 255, 0.2) 0%, rgba(15, 15, 30, 0) 70%);
     top: 50%;
-    /* antes era 10% */
     left: 50%;
     transform: translate(-50%, -50%);
-    /* 👈 necessário para centralizar corretamente */
     filter: blur(50px);
     z-index: -1;
     animation: pulse 4s infinite alternate;
@@ -411,4 +409,130 @@ header nav ul li:hover::after {
     top: 50%;
     left: 10%;
     z-index: -2;
+}
+
+/* === ANIMAÇÃO TOP DE FUNDO === */
+@keyframes floatParticles {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-30px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+.futuristic-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.futuristic-bg span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #00f7ff 0%, transparent 70%);
+  border-radius: 50%;
+  animation: floatParticles 6s ease-in-out infinite;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+.futuristic-bg span:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.futuristic-bg span:nth-child(2) { top: 30%; left: 70%; animation-delay: 1s; }
+.futuristic-bg span:nth-child(3) { top: 60%; left: 25%; animation-delay: 2s; }
+.futuristic-bg span:nth-child(4) { top: 80%; left: 50%; animation-delay: 3s; }
+.futuristic-bg span:nth-child(5) { top: 20%; left: 85%; animation-delay: 4s; }
+.futuristic-bg span:nth-child(6) { top: 50%; left: 10%; animation-delay: 5s; }
+.futuristic-bg span:nth-child(7) { top: 70%; left: 75%; animation-delay: 6s; }
+.futuristic-bg span:nth-child(8) { top: 40%; left: 40%; animation-delay: 7s; }
+
+.item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+}
+
+.item.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+/* --- Entradas --- */
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInRight 0.7s forwards;
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInLeft 0.7s forwards;
+}
+
+/* --- Saídas --- */
+.slide-out-left {
+  animation: slideOutLeft 0.7s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.7s forwards;
+}
+
+/* --- Keyframes --- */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 }
