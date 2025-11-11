@@ -535,4 +535,8 @@ header nav ul li:hover::after {
     transform: translateX(100%);
     opacity: 0;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 599ea4d (New Effects)
